@@ -2,8 +2,8 @@
 import { jsx } from '@emotion/core';
 import { colors, weights } from 'style';
 
-const Text = ({ children, ...props }) => (
-  <p css={{ ...props }}>{children}</p>
+const Text = ({ children, margin = '0', ...props }) => (
+  <p css={{ margin, ...props }}>{children}</p>
 );
 
 export default Text;

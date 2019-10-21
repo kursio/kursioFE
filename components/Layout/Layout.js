@@ -7,7 +7,7 @@ function withLayout(WrappedComponent) {
       return (
         <React.Fragment>
           <Header />
-          <Flex padding="0 50px">
+          <Flex padding="0 10%" flexDirection="column">
             <WrappedComponent />
           </Flex>
         </React.Fragment>
