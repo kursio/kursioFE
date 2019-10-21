@@ -1,0 +1,46 @@
+{
+  "env": {
+      "development": {
+          "presets": [
+              "next/babel"
+          ]
+      },
+      "production": {
+          "presets": [
+              "next/babel"
+          ]
+      },
+      "test": {
+          "presets": [
+              [
+                  "next/babel",
+                  {
+                      "preset-env": {
+                          "modules": "commonjs"
+                      }
+                  }
+              ]
+          ]
+      }
+  },
+  "plugins": [
+      "emotion",
+      [
+          "module-resolver",
+          {
+              "alias": {
+                  "components": "./components",
+                  "style": "./style",
+                  "utils": "./utils",
+                  "server": "./server",
+                  "services": "./services",
+                  "static": "./static",
+                  "store": "./store",
+                  "actions": "./store/actions",
+                  "reducers": "./store/reducers",
+                  "stories": "./stories"
+              }
+          }
+      ]
+  ]
+}
