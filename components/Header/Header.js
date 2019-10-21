@@ -11,7 +11,7 @@ const HeaderLink = ({ children }) => (
 );
 
 const Header = ({  }) => (
-  <Flex justifyContent="space-between" alignItems="center" height="70px" padding="0 50px">
+  <Flex justifyContent="space-between" alignItems="center" height="70px" padding="0 10%">
     {/* logo */}
     <Flex>
       <HeaderLink>About</HeaderLink>
