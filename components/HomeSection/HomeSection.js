@@ -14,12 +14,13 @@ const HomeSection = ({ title, objects }) => (
       {title}
     </Text>
     <Flex justifyContent="space-between" width="100%">
-      {objects.map((item) => (
+      {objects.map((item, index) => (
         <CardImage
           image={item.image}
           title={item.title}
           subtitle={item.subtitle}
           description={item.description}
+          key={index}
         />
       ))}
     </Flex>
